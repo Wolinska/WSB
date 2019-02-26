@@ -1,0 +1,7 @@
+body{
+	background-color: bisque;
+}
+#ikona{
+		list-style-image: url(../img/icone_polska_flaga.png);
+		margin-left: 100px;
+}
