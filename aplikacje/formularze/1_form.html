@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularze</title>
+    </head>
+    <body>
+        <!--method get/post-->
+        <form method="post">
+            <label for="login">Login
+                <input type="text" name="login" id="login" placeholder="Login">
+            </label>
+            <br>
+            <label for="haslo"> Hasło
+                <input type="password" name="haslo" id="haslo" placeholder="Hasło">
+            </label> <br>
+                <input type="submit" name="przycisk" id="przycisk" value="Wyślij">
+        </form>
+
+        <fieldset>
+            <legend>Wybory</legend>
+            <form action="1_glosowanie.html" method="get">
+                <input type="text" name="nick"><br>
+                <input type="radio" name="kandydat" value="Kowal"> Kowal
+                <input type="radio" name="kandydat" value="N"> Nowak
+                <input type="radio" name="kandydat" value="P"> Pawlak
+                <input type="radio" name="kandydat" value="K"> Kowalski <br>
+
+                <input type="submit" name="przycisk" value="Zagłosuj">
+            </form>
+        </fieldset> <hr>
+        <form action="1_glosowanie.html" method="post">
+            <input
+                   type="text"
+                   name="imie"
+                   id="imie"
+                   placeholder="Imię"
+                   title="Podaj swoje imię, możesz wprowadzić tylko litery"
+                   pattern="[a-z]{2,15}"
+                   required autofocus> <br>
+            <input type="text" name="nazwisko" placeholder="Nazwisko" required><br>
+            <input type="email" name="mail" placeholder="przykladowe@wp.pl" required><br>
+            <input type="number" name="wiek" placeholder="Wiek"><br>
+            Narodowość:
+            <input type="radio" name="narodowosc" value="P" checked> Polska
+            <input type="radio" name="narodowosc" value="U"> Ukraina
+            <input type="radio" name="narodowosc" value="R"> Rosja <br>
+            <input type="submit" name="przycisk">
+        </form> <hr>
+        <form method="post">
+            <p>
+            Nazwa uzytkownika:
+                <input type="text" size="6" maxlength="6" name="login" required><br>
+                Hasło: <input type="password" name="pass"><br>
+                <input type="submit" name="przycisk">
+            </p>
+        </form>
+    </body>
+</html>
+
+<!--GET - metoda domyslna; widac haslo na pasku adresu;jest szybszy-->
+<!--Typ radio - jeśli chcemy, żeby była możliwość zaznaczenia tylko jednej opcji to name musi być taki sam-->
+<!--title widoczny po najechaniu na pole-->
+<!--checked - domyślnie wybiera wartość-->
+<!--autofocus - ustawienie kursora w danym miejscu-->
