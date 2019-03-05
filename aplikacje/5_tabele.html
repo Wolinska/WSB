@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./CSS/5_tabele.css"
+    <title>Struktura</title>
+</HEAD>
+<!--Tabele-->
+<BODY>
+    <table>
+
+        <tr>
+            <td>Imie</td>
+            <td>Nazwisko</td>
+            <td>Miasto</td>
+        </tr>
+
+        <tr>
+            <td>Jan</td>
+            <td>Nowak</td>
+            <td>Poznan</td>
+        </tr>
+
+        <tr>
+            <td>Anna</td>
+            <td>Nowak</td>
+            <td>Szczecin</td>
+        </tr>
+    </table>
+<hr>
+    <table border="1">
+        <tr>
+            <th>Nagłówek 1</th>
+            <th>Nagłówek 2</th>
+            <th>Nagłówek 3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+<hr>
+<!--    Tabela zdjęcia-->
+    <table>
+        <tr>
+            <td><img src="img/poznan.png"></td>
+            <td><img src="img/wsb.jpg"></td>
+        </tr>
+        <tr>
+            <td><img src="img/wsb.jpg"></td>
+            <td><img src="img/poznan.png"></td>
+        </tr>
+    </table>
+<hr>
+    <table id="tabela4">
+        <tr>
+            <th></th>
+            <th>Naglowek pierwszej kolumny</th>
+            <th>Naglowek drugiej kolumny</th>
+        </tr>
+        <tr>
+            <th>Naglowek pierwszego wiersza</th>
+                 <td>Dane 1</td>
+                 <td>Dane 2</td>
+        </tr>
+
+        <tr>
+            <th>Naglowek drugiego wiersza</th>
+                 <td>Dane 1</td>
+                 <td>Dane 2</td>
+        </tr>
+    </table>
+
+    <!--Tabela 5-->
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Nagłówek pierwszej kolumny</th>
+            <th scope="col">Nagłówek drugiej kolumny</th>
+        </tr>
+        <tr>
+                <th scope="row">Nagłowek pierwszego wiersza</th>
+                <th>1</th>
+                <th>2</th>
+        </tr>
+        <tr>
+                <th scope="row">Nagłowek drugiego wiersza</th>
+                <th>3</th>
+                <th>4</th>
+        </tr>
+    </table>
+<hr>
+    <!--Łączenie kolumn-->
+    <table>
+        <tr>
+        <th></th>
+            <th scope="col">Poniedziałek</th>
+            <th scope="col">Wtorek</th>
+            <th scope="col">Środa</th>
+        </tr>
+        <tr>
+            <th scope="row">15:00</th>
+            <td>Zapasy</td>
+            <td>Street workout</td>
+            <td>Judo</td>
+        </tr>
+        <tr>
+        <th scope="row">16:00</th>
+            <td colspan="3">Box</td>
+        </tr>
+        <th scope="row">17:00</th>
+            <td>KSW</td>
+            <td colspan="2">Zapasy</td>
+    </table>
+<hr>
+    <!--Łączenie wierszy-->
+    <table>
+        <tr>
+            <td>1 komórka</td>
+            <td>2 komórka</td>
+            <td>3 komórka</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4 komórka</td>
+            <td>5 komórka</td>
+            <td>6 komórka</td>
+        </tr>
+        <tr>
+            <td>8 komórka</td>
+            <td>9 komórka</td>
+        </tr>
+    </table>
+<hr>
+    <table>
+        <tr>
+            <th>Zmienna a</th>
+            <th>Zmienna b</th>
+            <th>Suma</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>8</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>300</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</BODY>
+
+</HTML>
+
+<!--scope - zakres nagłówka (kolumna/wiersz)-->
+<!--colspan - łączenie komórek-->
+<!--rowspan - łączenie wierszy-->
+<!--tfoot - stopka-->
