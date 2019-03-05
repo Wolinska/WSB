@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="imie" autofocus autocomplete="off"><br>
+            <input type="password" name="haslo"><br>
+            <input type="number" name="liczba1" step="0.1"><br>
+            <input type="number" name="liczba1" step="10"><br>
+            Daty:
+                <input type="date"><br>
+                <input type="time"><br>
+                <input type="datetime-local"><br>
+                <input type="week"><br>
+                <input type="month"><br>
+            Telefon:
+                <input  type="tel"><br>
+            Kolor:
+                <input type="color"><br>
+            Zakres:
+                <input type="range" min="0" max="255" name="zakres"><br>
+            Lista:
+                <label>Dzień tygodnia</label>
+                <input type="text" list="tydzien" name="lista">
+                <datalist id="tydzien">
+                    <option value="poniedzialek">
+                    <option value="wtorek">
+                    <option value="sroda">
+                    <option value="czwartek">
+                    <option value="piatek">
+                    <option value="sobota">
+                    <option value="niedziela">
+                </datalist><br>
+
+            Wyrazenia regularne:
+                Pesel:
+                    <input type="text" name="pesel" pattern="[0-9]{11}" ><br>
+                Kod pocztowy:
+                    <input type="text" name="kod" pattern="^\d{2}-\d{3}$"><br>
+                Hasło:
+            <!--min 8 znaków, 1 duża litera, 1 mała i cyfra-->
+                    <input type="text" name="haslo" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,})}" required><br>
+
+
+            <input type="submit" name="przycisk" value="Wyślij"><br>
+<!--<input type="submit" name="przycisk" value="Wyslij" formtarget="_blank" formnovalidate>-->
+        </form>
+
+        <!--ZADANIE DOMOWE - utwórz pattern (wyrazenia regularne) do pól: tel kom, adres ip -->
+    </body>
+</html>
+
+<!--autocomplete - nie wyświetla wcześniej wprowadzonych info-->
+<!--{8,} - minimum 8 znaków-->
+<!--formtarget="_blank" - otwiera w nowej karcie-->
+<!--formnovalidate - nie zwraca uwagi na required-->
