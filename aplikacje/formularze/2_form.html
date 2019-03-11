@@ -42,7 +42,12 @@
                     <input type="text" name="kod" pattern="^\d{2}-\d{3}$"><br>
                 Hasło:
             <!--min 8 znaków, 1 duża litera, 1 mała i cyfra-->
-                    <input type="text" name="haslo" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,})}" required><br>
+                    <input type="text" name="haslo" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,})}" ><br>
+                Telefon komórkowy:
+                    <input type="text" name="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="123 456 789"><br>
+                Adres ip:
+                    <input type="text" name="ip" pattern="">
+            <!--(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)_*(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)_*){3}-->
 
 
             <input type="submit" name="przycisk" value="Wyślij"><br>
