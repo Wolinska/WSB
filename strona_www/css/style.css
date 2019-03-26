@@ -134,3 +134,47 @@ body{
     display: block;
     margin-bottom: 20px;
 }
+
+.button{
+    text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    background-color: #E8B9B9;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-transform: capitalize;
+}
+
+.gallery{
+    background-image: url('./../images/background.png');
+    background-size: cover;
+    padding: 50px 350px;
+    height: 2000px;
+
+}
+
+.gallery h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: #2C3247;
+}
+
+.gallery p{
+    text-align: center;
+    color: #2C3247;
+    margin-bottom: 30px;
+
+}
+
+.zdjecia .col{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.gallery .button a{
+    margin-top: 20px;
+    display: inline-block;
+}
